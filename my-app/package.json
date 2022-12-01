@@ -1,25 +1,24 @@
 {
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "api",
-      "web",
-      "packages/*"
-    ]
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@gorhom/bottom-sheet": "^4.4.5",
+    "expo": "~47.0.8",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-gesture-handler": "~2.8.0",
+    "react-native-reanimated": "~2.12.0"
   },
   "devDependencies": {
-    "@redwoodjs/core": "3.2.0"
+    "@babel/core": "^7.12.9"
   },
-  "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config",
-    "root": true
-  },
-  "engines": {
-    "node": ">=14.19 <=16.x",
-    "yarn": ">=1.15"
-  },
-  "prisma": {
-    "seed": "yarn rw exec seed"
-  },
-  "packageManager": "yarn@3.2.3"
+  "private": true
 }
